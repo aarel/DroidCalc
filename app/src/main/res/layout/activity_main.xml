@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="32sp"
+        android:background="#E0E0E0"
+        android:text=""/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Number buttons -->
+        <Button android:id="@+id/btn1" android:text="@string/btn1" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn2" android:text="@string/btn2" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn3" android:text="@string/btn3" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnAdd" android:text="@string/btn+" style="@style/CalculatorButton"/>
+
+        <Button android:id="@+id/btn4" android:text="@string/btn4" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn5" android:text="@string/btn5" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn6" android:text="@string/btn6" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnSubtract" android:text="@string/btn-" style="@style/CalculatorButton"/>
+
+        <Button android:id="@+id/btn7" android:text="@string/btn7" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn8" android:text="@string/btn8" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btn9" android:text="@string/btn9" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnMultiply" android:text="@string/btn*" style="@style/CalculatorButton"/>
+
+        <Button android:id="@+id/btn0" android:text="@string/btn0" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnEquals" android:text="=" style="@style/CalculatorButton"/>
+        <Button android:id="@+id/btnDivide" android:text="/" style="@style/CalculatorButton"/>
+
+    </GridLayout>
+</LinearLayout>
