@@ -1,19 +1,30 @@
 <resources>
     <string name="app_name">Simple Calculator</string>
-    <string name="btn0">0</string>
-    <string name="btn1">1</string>
-    <string name="btn2">2</string>
-    <string name="btn3">3</string>
-    <string name="btn4">4</string>
-    <string name="btn5">5</string>
-    <string name="btn6">6</string>
-    <string name="btn7">7</string>
-    <string name="btn8">8</string>
-    <string name="btn9">9</string>
-    <string name="btnAdd">+</string>
-    <string name="btnSubtract">-</string>
-    <string name="btnMultiply">*</string>
-    <string name="btnDivide">/</string>
+
+    <!-- Number Buttons -->
+    <string-array name="number_buttons">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <!-- Operator Buttons -->
+    <string-array name="operator_buttons">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+
+    <!-- Other Buttons -->
     <string name="btnClear">C</string>
     <string name="btnEquals">=</string>
+    <string name="hello_world">Hello, World!</string>
 </resources>

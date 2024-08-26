@@ -44,19 +44,22 @@ class CalculatorLogic {
         private fun performOperation(stack: Stack<Double>, operators: Stack<Char>) {
             val operand2 = stack.pop()
             val operand1 = stack.pop()
-            val operator = operators.pop()
-
-            val result = when (operator) {
+            val result = when (val operator = operators.pop()) {
                 '+' -> operand1 + operand2
                 '-' -> operand1 - operand2
                 '*' -> operand1 * operand2
-                '/' -> operand1 / operand2
+                '/' -> {
+                    if (operand2 == 0.0) {
+                        // Handle division by zero
+                        throw ArithmeticException("Cannot divide by zero")
+                    } else {
+                        operand1 / operand2
+                    }
+                }
                 else -> throw IllegalArgumentException("Invalid operator: $operator")
-
             }
 
             stack.push(result)
         }
-
     }
 }
